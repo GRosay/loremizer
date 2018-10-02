@@ -59,7 +59,7 @@ You can get a random title by calling the following method:
 
 `loremizer::getTitle();`
 
-If you want directly the title with the H balise, add the level you want:
+If you want directly the title surrounded by the H balise, add the level you want:
 
 ```
 loremizer::getTitle('h1');
