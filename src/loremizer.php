@@ -3,7 +3,7 @@
 /**
  * 
  * Loremizer
- * v0.0.1-alpha
+ * v0.0.1
  * 
  * Loremizer is a small PHP object to quickly generate random content 
  * 
