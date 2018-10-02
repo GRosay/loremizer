@@ -1,0 +1,24 @@
+{
+    "name": "grosay/loremizer",
+    "description": "Loremizer is a tool that generate random content based on the famous `Lorem Ipsum`",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Gaspard Rosay",
+            "email": "gaspard@rosay.ch"
+        }
+    ],
+    "require": {
+    	"php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Loremizer\\": "src/"
+        }
+    },
+    "extra": {
+        "resources": {
+            "/matthias/package-name/templates": "Resources/views"
+        }
+    }
+}
