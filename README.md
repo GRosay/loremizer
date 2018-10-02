@@ -1,5 +1,10 @@
 # Loremizer
 
+[![Latest Stable Version](https://poser.pugx.org/grosay/loremizer/v/stable)](https://packagist.org/packages/grosay/loremizer)
+[![Total Downloads](https://poser.pugx.org/grosay/loremizer/downloads)](https://packagist.org/packages/grosay/loremizer)
+[![Latest Unstable Version](https://poser.pugx.org/grosay/loremizer/v/unstable)](https://packagist.org/packages/grosay/loremizer)
+[![License](https://poser.pugx.org/grosay/loremizer/license)](https://packagist.org/packages/grosay/loremizer)
+
 Loremizer is a tool that generate random content based on the famous `Lorem Ipsum`. 
 
 It's a quick way to generate content for your demos and design tests.
