@@ -3,7 +3,7 @@
 /**
  * 
  * Loremizer
- * v0.0.1
+ * v0.1.0
  * 
  * Loremizer is a small PHP object to quickly generate random content 
  * 
@@ -33,10 +33,10 @@ class loremizer
      * 
      * @return string
      */
-    static public function getParagraph($n=2){
+    static public function getParagraph($n=2, $tag=false){
         $return = "";
-        for($i=1;$i<=$n;$i++){
-            $return .=  self::generateParagraph();
+        for($i=0;$i<$n;$i++){
+            $return .=  ($tag ? "<p>" : null).self::generateParagraph().($tag ? "</p>" : " ");
         }
         return trim($return);
     }
@@ -50,7 +50,7 @@ class loremizer
      */
     static public function getPhrase($n=1){
         $return = "";
-        for($i=1;$i<=$n;$i++){
+        for($i=0;$i<$n;$i++){
             $return .=  self::generatePhrase();
         }
         return trim($return);
@@ -61,18 +61,12 @@ class loremizer
      *
      * @return string
      */
-    static public function getTitle($level = null){
-        if($level != null){
-            return "<".$level.">".self::generateTitle()."</".$level.">";
-        }
-        return  self::generateTitle();
+    static public function getTitle($tag = false, $level = null){
+        return ($tag ?  "<".(!is_null($level) ? $level : "h1" ).">" : null).self::generateTitle().($tag ?  "</".(!is_null($level) ? $level : "h1" ).">" : null);
     }
 
-    static public function getImg($imgbalise=false, $width=800, $height=600){
-        if($imgbalise){
-            return "<img src='https://source.unsplash.com/random/".$width."x".$height."' />";
-        }
-        return "https://source.unsplash.com/random/".$width."x".$height;
+    static public function getImg($tag=false, $width=800, $height=600){
+        return ($tag ? "<img src='" : null)."https://source.unsplash.com/random/".$width."x".$height.($tag ? "' />" : null);
     }
 
     /**

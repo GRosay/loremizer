@@ -100,6 +100,7 @@ This project is under Apache2.0-licence.
 
 # Changelog
 
+* 2018-10-03: Add option "tags" parameter to getTitle & getParagraph
 * 2018-10-02: Birth of Loremizer
 
 # Credit
